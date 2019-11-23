@@ -22,6 +22,8 @@ namespace UserMaintenance
             lblFullName.Text = Resource1.FullName; // label1            
             btnAdd.Text = Resource1.Add; // button1
             btnSave.Text = Resource1.Save; //button2
+            btnDelete.Text = Resource1.Delete; //button3
+
 
 
 
@@ -71,6 +73,9 @@ namespace UserMaintenance
 
         }
 
-
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            users.RemoveAt(listUsers.SelectedIndex);
+        }
     }
 }
